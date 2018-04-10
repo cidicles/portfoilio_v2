@@ -1,0 +1,14 @@
+{
+  "name": "sorts-mill-goudy",
+  "homepage": "https://github.com/theleagueof/sorts-mill-goudy",
+  "_release": "06072890c7",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "06072890c7b05f274215a24f17449655ccb2c8af"
+  },
+  "_source": "git://github.com/theleagueof/sorts-mill-goudy.git",
+  "_target": "*",
+  "_originalSource": "theleagueof/sorts-mill-goudy",
+  "_direct": true
+}

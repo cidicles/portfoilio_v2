@@ -1,0 +1,114 @@
+<div class="project_cont"> <div ui-view="view_0" style="color: #fff"></div> </div> <div class="listing"> <div class="intro"> <div class="col-md-6"> <h1>I’m Eric J Seaton a <span>web designer</span> & <span>developer</span> with now <span>13 years</span> and counting of professional <span>design</span> & <span>development</span> experience. I love all things <span>digital</span>.</h1> </div> </div> <div class="title"> <div class="col-md-12"> <h2>Selected</h2> <h1>Experiences</h1> </div> </div> <div class="col-md-12 item" ng-mouseover="hover($event)" ng-mouseleave="leave($event)" ng-repeat="item in projects.projects | filter:filters" data-color="{{item.color}}"> <a ui-sref="main.open({ projectId: item.idprojects })"><h2><span>.00{{ item.idprojects }}</span>{{item.title}}</h2></a> <div class="itemContent"> </div> </div> </div> <!--
+	<div class="col-md-12 wrap_project bigger" ng-repeat="item in projects | filter:filters">
+
+
+			<div class="project" ng-click="toggle($event, {{ item.idprojects }})" elem-ready="someMethod()">
+				<a class="close" ng-click="close($event, {{ item.idprojects }})"><i class="fa fa-times-circle"></i></a>
+
+
+
+				<div class="wrap_desc">
+					<div class="project_desc">
+
+
+
+						<div ng-if="$index % 2 == 0">
+					        <div class="col-md-6">
+						        <div class="shortdesc">
+						        	<h2 data-fittext data-fittext-min="180" data-fittext-max="500" data-fittext-nl>{{item.title}}</h2>
+						        </div>
+					        </div>
+
+					        <div class="col-md-6">
+					        	<div class="longdesc">
+									<h3>{{item.tagline}}</h3>
+									<div class="tiny-sep"></div>
+					        		{{item.longdesc}}<br /><br />
+					        		<a href="{{item.link}}" class="btn btn-default"><i class="fa fa-link"></i> {{item.link}}</a>
+							       	<div class="software_wrap">
+								       	<div class="software" data-toggle="tooltip" data-placement="top" title="Tooltip on top" ng-repeat="(image, language) in item.languages  track by $index">
+								       		<img src="images/logos/{{image}}.png" /><br />
+								       		{{language}}
+								       	</div>
+							       	</div>
+					        	</div>
+					        </div>
+				        </div>
+
+						<div ng-if="$index % 2 != 0">
+
+					        <div class="col-md-6">
+					        	<div class="longdesc">
+									<h3>{{item.tagline}}</h3>
+									<div class="tiny-sep"></div>
+					        		{{item.longdesc}}<br /><br />
+					        		<a href="{{item.link}}" class="btn btn-default"><i class="fa fa-link"></i> {{item.link}}</a>
+							       	<div class="software_wrap">
+								       	<div class="software" data-toggle="tooltip" data-placement="top" title="Tooltip on top" ng-repeat="(image, language) in item.languages  track by $index">
+								       		<img src="images/logos/{{image}}.png" /><br />
+								       		{{language}}
+								       	</div>
+							       	</div>
+					        	</div>
+					        </div>
+
+					        <div class="col-md-6">
+						        <div class="shortdesc">
+						        	<h2 data-fittext data-fittext-min="180" data-fittext-max="500" data-fittext-nl>{{item.title}}</h2>
+						        </div>
+					        </div>
+
+				        </div>
+
+
+
+					</div>
+				</div>
+
+				<button class="btn btn-default close_desc" ng-click="closeDesc($event, {{ item.idprojects }})"><i class="fa fa-eye-slash"></i></button>
+
+
+		        <div class="color_project" style="background: {{item.color}};"></div>
+
+				<div class="project-video" data-vid="{{ item.videos }}"></div>
+			</div>
+
+
+	</div>
+	--> <!--
+
+<label>Search: <input ng-model="searchText"></label>
+
+        <div class="row" ng-repeat="item in projects">
+
+        	<div class="full">
+
+				<div class="video-wrap">
+		            <div class="col-md-6 full-desc">
+		                <div class="col-md-6">
+
+			                <h3>{{item.title}}</h3>
+			                <h4>{{item.software}}</h4>
+			                <h5>{{item.languages}}</h5>
+
+							<button class="btn btn-primary btn-acc" type="button" data-toggle="collapse" data-target="{{ '#' + item.idprojects}}">
+							  Project Description
+							</button>
+
+							<div class="collapse" id="{{item.idprojects}}">
+							    <p>{{item.longdesc}}</p>
+							    <a class="btn btn-primary" href="{{item.link}}"><span class="glyphicon glyphicon-chevron-right"></span> {{item.link}}</a>
+							</div>
+
+		            	</div>
+		            </div>
+					<video autoplay loop class="port-video" webkit-playsinline>
+						<source src="{{ 'videos/' + item.videos + '.webm'}}" type="video/webm">
+						<source src="{{ 'videos/' + item.videos + '.mp4'}}" type="video/mp4">
+					</video>
+				</div>
+
+            </div>
+
+        </div>
+-->
